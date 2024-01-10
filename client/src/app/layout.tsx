@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import { Footer } from '@/components/footer'
-
+import { ptBr, enUs } from "@/languages/languages.json";
+import { Header } from '@/components/Header/index'
+import { Footer } from '@/components/Footer/index'
 import './globals.css'
 import { Header } from '@/components/header'
 
@@ -22,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-zinc-950`}>
-        <Header />
+    <html lang="pt-br">
+      <body className={`${inter.className} bg-zinc-950 h-screen`}>
+        <Header langueBR={ptBr} langueEn={enUs}/>
         {children}
         <Footer />
       </body>

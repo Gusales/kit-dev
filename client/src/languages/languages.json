@@ -1,0 +1,25 @@
+{
+ "ptBr": 
+  { "header": 
+    {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contacts": "Contatos"
+    },
+    "Footer": {
+     "textMotivator" : "Gostou do site? Te ajudou quando precisou?\nQue tal ajudar a gente a aprimorar cada vez mais?",
+     "textDonate" : "Doe para o café dos Devs!"
+    }
+  },
+  "enUs": {
+    "header": {
+      "about": "About",
+      "projects": "Projects",
+      "contacts": "Contacts"
+     },
+     "Footer": {
+      "textMotivator" : "Do you like this site? Help you in something?\nSo what about you help us to improve this project?",
+      "textDonate" : "Donate for the Dev's Coffee"
+     }
+  }
+}
