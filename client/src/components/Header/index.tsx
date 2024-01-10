@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Logo from "@/assets/IconKitDev.svg";
 import { FaUserCircle } from "react-icons/fa";
-import { ptBr, enUs } from "@/languages/languages.json";
 import { Switch } from "@/components/ui/switch";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
@@ -16,12 +15,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-export function Header() {
-  const [language, setLanguage] = useState(ptBr);
 
-  function handleChangeLang() {
-    if (language == ptBr) return setLanguage(enUs);
-    else return setLanguage(ptBr);
+export function Header({ langueBR, langueEn }:any) {
+  let [language, setLanguage] = useState(langueBR);
+  
+function handleChangeLang() {
+    if (language == langueBR) return setLanguage(langueEn);
+    else return setLanguage(language = langueBR);
   }
 
   function itensMenu(props: string) {
@@ -74,7 +74,7 @@ export function Header() {
   }
 
   return (
-    <header className="h-24 flex justify-between lg:justify-evenly items-center font-semibold text-zinc-100">
+    <header className="h-24 fixed w-full flex justify-between lg:justify-evenly items-center font-semibold text-zinc-100">
       <div className="flex ml-5">
         <Image src={Logo} alt="Logo from Kit Dev" width={30} />
         <h2 className="text-4xl ml-2">KIT DEV</h2>
