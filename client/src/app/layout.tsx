@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { ptBr, enUs } from "@/languages/languages.json";
-import { Header } from '@/components/Header/index'
-import { Footer } from '@/components/Footer/index'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
+
 import './globals.css'
-import { Header } from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
