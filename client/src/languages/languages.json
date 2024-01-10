@@ -1,0 +1,17 @@
+{
+ "ptBr": 
+  { "header": 
+    {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contacts": "Contatos"
+    }
+  },
+  "enUs": {
+    "header": {
+      "about": "About",
+      "projects": "Projects",
+      "contacts": "Contacts"
+     } 
+  }
+}
