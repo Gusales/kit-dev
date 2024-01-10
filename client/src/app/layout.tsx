@@ -1,13 +1,18 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+
 import { Footer } from '@/components/footer'
+
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kit Dev',
-  description: 'Seu Kit de Ferramentas para Melhorar suas Programação',
+  title: {
+    default: 'Kit Dev',
+    template: '%s | Kit Dev'
+  },
+  description: 'Seu Kit de ferramentas para melhorar sua produtividade na programação.',
 }
 
 export default function RootLayout({
