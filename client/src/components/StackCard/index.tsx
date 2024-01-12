@@ -13,13 +13,13 @@ export function StackCard({
   stackName,
 }: StackCardProps) {
   return (
-    <div>
+    <div className="hover:scale-105 transition-all">
       <Image
         src={stackImageBannerUrl}
-        alt={`Baner da stack ${stackName}`}
+        alt={`Banner da stack ${stackName}`}
         width={750}
         height={500}
-        className="w-[260px] h-[180px] rounded-md shadow-sm transition-all hover:scale-105"
+        className="w-[260px] h-[180px] rounded-md shadow-sm opacity-55"
       />
       <div className="flex items-center justify-center gap-2 text-white mt-2">
         <p>{stackName}</p>
