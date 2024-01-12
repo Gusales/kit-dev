@@ -15,7 +15,7 @@ export function Footer() {
       <div className="flex justify-center items-center p-2">
         <a
           href="#"
-          className="text-sm text-white pr-3 underline hover:text-zinc-500"
+          className="text-sm text-white pr-3 underline hover:text-zinc-500 underline-offset-4"
         >
           Doe para o café dos Devs!
         </a>
